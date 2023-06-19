@@ -10,8 +10,20 @@
 
 // Console.WriteLine($"There are {fraudulentOrderIDs.Length} fraudulent orders to process.");
 
-string[] names = { "Rowena", "Robin", "Bao" };
-foreach (string name in names)
+// string[] names = { "Rowena", "Robin", "Bao" };
+// foreach (string name in names)
+// {
+//   Console.WriteLine(name);
+// }
+
+int[] inventory = { 200, 450, 700, 175, 250 };
+int sum = 0;
+int bin = 0;
+foreach (int item in inventory)
 {
-  Console.WriteLine(name);
+  sum += item;
+  bin++;
+  Console.WriteLine($"Bin {bin} = {item} (Running total: {sum})");
 }
+
+Console.WriteLine($"We have {sum} items in inventory.");
