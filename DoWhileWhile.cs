@@ -1,6 +1,6 @@
-Random random = new Random();
-// int current = 0;
-int current = random.Next(1, 11);
+// Random random = new Random();
+// // int current = 0;
+// int current = random.Next(1, 11);
 
 // do-while statement
 
